@@ -1,0 +1,130 @@
+#algoritmo de ordenação
+class Livro:
+  def __init__(self,titulo,altor,numeroPaginas):
+    self.livro=Livro
+    self.titulo=titulo
+    self.numeroPaginas=numeroPaginas
+  def emprestar(self,dias):
+    if dias<=7 and empres==n or N:
+      print(f'o livro foi eprestado por {dias},favor devolver até o prazo')
+      empres==s.upper()
+
+    else:
+      print('quantidade de dias para emprestimo execedida,o imprestimo só é possivel por 7 dias')
+      empress==n
+
+  def devolver(self):
+    if empres==s:
+      print(f'o livro {livro} de altor {altor}doi devolvido dentro do prazo de {dias} dias')
+      empres==n
+  def disponivel(self):
+    if empres==n:
+      print(f'o livro {livro} de autor {autor} está disponivel')
+    else:
+      print(f'o livro {livro} de autor {autor} não está disponivel')
+
+class Paciente:
+  def __init__(self,nome,idade,historicoConsulta) :
+    self.nome=nome
+    self.idade=idade
+    self.historicoConsulta=historicoConsulta
+  def consultaNova(self,numeroConsulta):
+    historicoConsulta+=numeroConsulta
+    print(f'o numero de consultas do paciente {nome} de idade:{idade} é de {historicoConsulta}')
+
+class Pessoa:
+  def __init__(self,nome,idade,peso,altura):
+     self.nome=nome
+     self.idade=idade
+     self.peso=peso
+     self.altura=altura
+  def envelhecer(self,anosMais):
+    idade+=anoMais
+    print(f"sua idade agora é de {idade}")
+  def engordar(self,pesoMais):
+    peso+=pesoMais
+    print(f"seu peso agora é de {peso}")
+  def emagrecer(self,pesoMenos):
+    peso-=pesoMenos
+    print(f"seu peso agora é de {peso}")
+  def crescer(self,alturaMais):
+    if idade<21:
+      alturaMais=0.5
+      altura+=alturaMais
+    else altura:
+      altura+=alturaMais
+
+class Retangulo:
+  def __init__(self,ladoA,ladoB):
+     self.ladoB=ladoB
+     self.ladoA=ladoA
+  def mudarValorLados(self,novoLadoA,novoLadoB):
+    ladoA=novoLadoA
+    ladoB=novoLadoB
+    print(f'os novos valores dos lados do seu retangulo são Lado A:{ladoA} e Lado B:{ladoB}')
+  def calculoArea(self):
+    area=ladoA*ladoB
+    print(f'a area do seu retangulo é de {area}')
+  def calculoPerimetro(self):
+    perimetro=(LadoA*2)+(LadoB*2)
+    print(f'a perimetro do seu retangulo é de {perimetro}')
+
+class Quadrado:
+  def __init__(self,tamanhoLado):
+      self.tamanhoLado=tamanhoLado
+  def mudarValorLado(self,tamanhoNovo):
+    tamanhoLado=tamanhoNovo
+  def calculoArea(self):
+    area=tamanhoLado*tamanhoLado
+  print(f'seu quadrado tem lado de {tamanhoLado} e sua area é de {area}')
+
+class Bola:
+  def __init__(self,cor,circunferencia,material):
+      self.cor=cor
+      self.circunferencia=circunferencia
+      self.material=material
+  def trocarCor(self,cornova):
+    cor=cornova
+  def mostrarCor(self):
+    print(f'a nova cor de sua bola é {cor}')
+
+class Aluno:
+    def __init__(self, nome, nota1, nota2):
+        self.nome = nome
+        self.nota1 = float(nota1)
+        self.nota2 = float(nota2)
+
+    def mediaA(self):
+        media = (self.nota1 + self.nota2) / 2
+        if media >= 6:
+            print(f'Parabéns aluno {self.nome}, sua média entre as notas {self.nota1} e {self.nota2} é de {media:.1f}, você passou de ano.')
+        else:
+            print(f'Aluno {self.nome}, sua média entre as notas {self.nota1} e {self.nota2} é de {media:.1f}, você infelizmente reprovou.')
+
+class ContaCorrente:
+    def __init__(self, numero, titular, saldo=0.0):
+        self.numero = numero
+        self.titular = titular
+        self.saldo = saldo
+
+    def depositar(self, valor):
+        if valor > 0:
+            self.saldo += valor
+            print(f"Depósito de R${valor:.2f} realizado na conta de {self.titular}.")
+        else:
+            print("Valor de depósito inválido.")
+
+    def sacar(self, valor):
+        if 0 < valor <= self.saldo:
+            self.saldo -= valor
+            print(f"Saque de R${valor:.2f} realizado na conta de {self.titular}.")
+        else:
+            print("Saldo insuficiente ou valor inválido.")
+
+    def transferir(valor, origem, destino):
+        if origem.saldo >= valor and valor > 0:
+            origem.sacar(valor)
+            destino.depositar(valor)
+            print(f"Transferência de R${valor:.2f} realizada de {origem.titular} para {destino.titular}.")
+        else:
+            print("Transferência não realizada. Verifique o saldo e o valor.")
